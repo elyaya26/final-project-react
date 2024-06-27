@@ -1,7 +1,7 @@
 import React from 'react';
 import './Lessons.css'
 import whatsappLogo from './Images/whatsapp-logo.png'
-import phone from './Images/phone.png'
+import phone from './Images/Pgithone.png'
 import car from './Images/lessons-car.png'
 import Time from './Images/Time.png'
 import mail from './Images/mail.png'
