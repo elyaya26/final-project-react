@@ -1,0 +1,17 @@
+.useful__content h3{
+    font-family: Inter, 'sans-serif';
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+}
+.useful__content-info{
+    font-family: Inter, 'sans-serif';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 136%;
+    color: #000;
+    max-width: 750px;
+}
+.Useful{
+    padding: 100px 0;
+}
