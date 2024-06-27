@@ -1,0 +1,76 @@
+.Rules{
+    background-color: seagreen;
+    padding-bottom: 150px;
+}
+.rules__content-card{
+    background-color: white;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 20px;
+
+}
+.rules__card-img{
+    margin-top: 30px;
+}
+.rules__content{
+    padding-top: 100px;
+}
+.rules__content-title h3{
+    font-family: Inter, 'sans-serif';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 112%;
+    color: #000;
+    text-align: center;
+}
+.rules__content-title h5{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 112%;
+    color: #000;
+}
+.rules__content-title{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    row-gap: 20px;
+    margin-top: 100px;
+}
+.rules__buy-geo{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    text-decoration: none;
+
+}
+.rules__buy-geo p{
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 112%;
+    color: #000;
+    border-bottom: 2px solid black;
+}
+.rules__buy-btn button{
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 131px;
+    height: 50px;
+    background-color: #11ae04;
+    border: none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 136%;
+    color: #fff;
+}
+.rules__content-btn{
+    display: flex;
+    column-gap: 120px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
