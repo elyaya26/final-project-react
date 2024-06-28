@@ -11,7 +11,8 @@ const Rules = () => {
 
     async function sendMessage(){
         const responce = await axios.post('https://codify-graduation-project.vercel.app/send-message', number)
-        console.log((await responce).data)
+        console.log(responce.data)
+
     }
     return (
         <div className='Rules'>
@@ -46,7 +47,7 @@ const Rules = () => {
 
                                 <div className="rules__buy-btn">
                                     <input type="text" placeholder='Ваш номер' onChange={(event) => setNumber({message: event.target.value})}/>
-                                    <button>КУПИТЬ</button>
+                                    <button onClick={sendMessage}>КУПИТЬ</button>
                                 </div>
                             </div>
 
