@@ -1,16 +1,16 @@
 import React from 'react';
+import road from '../../modules/Useful/images/road.png'
 
 const News = (props) => {
     return (
         <div>
             <div className="container">
                 <div className="useful__content">
-                    <h3>Полезные статьи</h3>
                     <div className="useful__content-info">
                         <p>
-
+                            {props.news.text}
                         </p>
-                        <img src="" alt="img"/>
+                        <img src={road} alt="img" width='406px' height='230px'/>
                     </div>
                 </div>
             </div>

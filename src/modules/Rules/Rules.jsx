@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Rules.css'
 import book from './images/book.png'
 import location from './images/location.png'
+import axios from "axios";
 
 const Rules = () => {
+    const [number, setNumber] = useState({
+        message: ''
+    })
+
+    async function sendMessage(){
+        const responce = await axios.post('https://codify-graduation-project.vercel.app/send-message', number)
+        console.log((await responce).data)
+    }
     return (
         <div className='Rules'>
             <div className="container">
@@ -34,7 +43,9 @@ const Rules = () => {
                                     <img src={location} alt="" width='24px' height='24px'/>
                                     <p>Сухе Ботора 26/1</p>
                                 </a>
+
                                 <div className="rules__buy-btn">
+                                    <input type="text" placeholder='Ваш номер' onChange={(event) => setNumber({message: event.target.value})}/>
                                     <button>КУПИТЬ</button>
                                 </div>
                             </div>
