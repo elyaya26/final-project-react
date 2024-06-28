@@ -48,10 +48,11 @@
 .rules__buy-geo p{
     font-family: Inter, sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 112%;
     color: #000;
     border-bottom: 2px solid black;
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
 }
 .rules__buy-btn button{
     border-radius: 30px;
@@ -71,6 +72,27 @@
     align-items: center;
     margin-top: 30px;
 }
+.rules__buy-btn{
+    display: flex;
+    column-gap: 15px;
+
+}
+.rules__buy-btn button:hover{
+    background-color: #208814;
+    transition-duration: 0.5s;
+}
+
+.rules__buy-btn input{
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 131px;
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+    border-radius: 30px;
+}
+
+
+
 
 
 

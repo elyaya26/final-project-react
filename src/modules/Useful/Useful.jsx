@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Useful.css'
 import News from "../../components/News/News";
 
@@ -13,18 +13,26 @@ const Useful = () => {
 
     const [news, setNews] = useState([]);
 
-    async function getNews(){
-        const responce = await fetch('https://codify-students-jst.vercel.app/news')
-        const data = await responce.json();
-        news(data)
-    }
+    useEffect(() => {
+        async function getNews(){
+            const responce = await fetch('https://codify-students-jst.vercel.app/news')
+            const data = await responce.json();
+            setNews(data)
+        }
+        getNews()
+    },[])
 
-    console.log(news)
+
+
     return (
         <div className='Useful'>
-            {news.map((item, index) => (
-                <News news={item} />
-            ))}
+            <h3>Полезные статьи</h3>
+            <div className="useful__news">
+                {news.map((item, index) => (
+                    <News news={item} key={news.id}/>
+                ))}
+            </div>
+
         </div>
     );
 };
