@@ -29,7 +29,7 @@ const Useful = () => {
             <h3>Полезные статьи</h3>
             <div className="useful__news">
                 {news.map((item, index) => (
-                    <News news={item} key={news.id}/>
+                    <News news={item} key={item.id}/>
                 ))}
             </div>
 
