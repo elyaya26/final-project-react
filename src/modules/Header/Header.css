@@ -1,0 +1,18 @@
+
+
+.header__content-info a{
+    font-family: Inter, serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+.header__content-info{
+    display: flex;
+    column-gap: 40px;
+}
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
