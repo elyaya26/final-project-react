@@ -10,7 +10,7 @@ const News = (props) => {
                         <p>
                             {props.news.text}
                         </p>
-                        <img src={road} alt="img" width='406px' height='230px'/>
+                        <img src={props.news.image} alt="img" width='406px' height='230px'/>
                     </div>
                 </div>
             </div>
