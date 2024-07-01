@@ -1,23 +1,42 @@
 import React from 'react';
-import Header from "./modules/Header/Header";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Header from "./modules/Header/Header"
 import './App.css'
-import Lessons from "./modules/Lessons/Lessons";
+import Lessons from "./modules/Lessons/Lessons"
 import About from "./modules/About/About";
-import Instructor from "./modules/Instructor/Instructor";
-import Rules from "./modules/Rules/Rules";
-import Useful from "./modules/Useful/Useful";
+import Instructor from "./modules/Instructor/Instructor"
+import Rules from "./modules/Rules/Rules"
+import Useful from "./modules/Useful/Useful"
+import Road from "./modules/Road/Road";
+
 
 const App = () => {
     return (
         <div className='App'>
             <div className="header__background">
-                <Header/>
-                <Lessons/>
+                <Header />
+                <Lessons />
             </div>
-            <About/>
-            <Instructor/>
-            <Rules/>
-            <Useful/>
+            <About />
+            <Instructor />
+            <Rules />
+            <Useful />
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
+            <div className="RoadBackground">
+                <Road/>
+            </div>
         </div>
     );
 };
@@ -25,44 +44,4 @@ const App = () => {
 export default App;
 
 
-// src/App.js
-// import React from 'react';
-// import Header from "./modules/Header/Header";
-// import Lessons from "./modules/Lessons/Lessons";
-// import About from "./modules/About/About";
-// import Instructor from "./modules/Instructor/Instructor";
-// import Rules from "./modules/Rules/Rules";
-// import Useful from "./modules/Useful/Useful";
-// // import Advantages from "./components/advantages/Advantages";
-// import Advantages from "./components/advantages/advantages";
-// import { ADVANTAGES_DATA } from "./constants/Advantages";
-// import './App.css';
-//
-// const App = () => {
-//     return (
-//         <div className='App'>
-//             <div className="header__background">
-//                 <Header />
-//                 <Lessons />
-//             </div>
-//             <About />
-//             <Instructor />
-//             <Rules />
-//             <Useful />
-//             <div className='advantage-flex'>
-//                 {ADVANTAGES_DATA.map((item) => {
-//                     return (
-//                         <div key={item.id}>
-//                             <Advantages
-//                                 icon={item.icon}
-//                                 text={item.text}
-//                             />
-//                         </div>
-//                     );
-//                 })}
-//             </div>
-//         </div>
-//     );
-// };
-//
-// export default App;
+
