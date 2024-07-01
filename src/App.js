@@ -8,6 +8,7 @@ import About from "./modules/About/About";
 import Instructor from "./modules/Instructor/Instructor"
 import Rules from "./modules/Rules/Rules"
 import Useful from "./modules/Useful/Useful"
+import Road from "./modules/Road/Road";
 
 
 const App = () => {
@@ -33,6 +34,9 @@ const App = () => {
                 pauseOnHover
                 theme="light"
             />
+            <div className="RoadBackground">
+                <Road/>
+            </div>
         </div>
     );
 };

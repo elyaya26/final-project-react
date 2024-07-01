@@ -21,7 +21,7 @@ const Lessons = () => {
                             Получите полную консультацию по звонку!
                         </p>
                         <div className="lessons__content-btn">
-                            <a href="">
+                            <a href="#">
                                 <button className='lessons__btn-whatsapp'>
                                     <img src={whatsappLogo} alt=""/>
                                     <p> WhatsApp</p>
