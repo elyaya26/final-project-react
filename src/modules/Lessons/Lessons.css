@@ -46,9 +46,8 @@
     font-family: Inter, serif;
     font-weight: 500;
     font-size: 15px;
-    line-height: 167%;
     color: #f1f1f1;
-    border: none;
+    border-bottom: none;
     text-decoration: none;
 }
 .lessons__btn-number{

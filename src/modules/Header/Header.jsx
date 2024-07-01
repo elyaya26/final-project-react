@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 import Logo from './images/header-logo.png'
 import Languages from './images/language.png'
+import Instructor from "../Instructor/Instructor";
 
 
 const Header = () => {
@@ -15,8 +16,8 @@ const Header = () => {
                         </a>
                     </div>
                     <div className="header__content-info">
-                        <a href="#">Обо мне</a>
-                        <a href="#">Методическое пособие</a>
+                        <a href="#instructor">Обо мне</a>
+                        <a href="#rules">Методическое пособие</a>
                         <a href="#">Статьи</a>
                         <a href="#">Тест</a>
                     </div>

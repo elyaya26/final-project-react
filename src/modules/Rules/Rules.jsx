@@ -15,7 +15,7 @@ const Rules = () => {
 
     }
     return (
-        <div className='Rules'>
+        <div className='Rules' id='rules'>
             <div className="container">
                 <div className="rules__content">
                     <div className="rules__content-card">
