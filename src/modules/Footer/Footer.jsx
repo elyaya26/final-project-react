@@ -51,18 +51,18 @@ const Footer = () => {
                     <img src={telegramIcon} alt="Telegram" />
                 </a>
             </div>
-            <div className="footer__brand">
+            <a href='#Header' className="footer__brand">
                 ЖАКШЫ ЖОЛ
-            </div>
+            </a>
             <div className="footer__contacts">
-                <div className="footer__phone">
+                <a href='tel:+0552 209 809' className="footer__phone">
                     <img src={phoneIcon} alt="Phone" />
                     <p>0552 209 809</p>
-                </div>
-                <div className="footer__phone">
+                </a>
+                <a href='tel:+0552 209 809' className="footer__phone">
                     <img src={phoneIcon} alt="Phone" />
                     <p>0552 209 809</p>
-                </div>
+                </a>
             </div>
         </footer>
     );

@@ -51,7 +51,7 @@ const Rules = () => {
                                 по звонку:
                             </h5>
                             <div className="rules__content-btn">
-                                <a href='#' className="rules__buy-geo">
+                                <a href='https://go.2gis.com/8d1nq' target='_blank' className="rules__buy-geo">
                                     <img src={location} alt="" width='24px' height='24px'/>
                                     <p>Сухе Ботора 26/1</p>
                                 </a>
