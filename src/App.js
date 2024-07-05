@@ -9,6 +9,7 @@ import Instructor from "./modules/Instructor/Instructor"
 import Rules from "./modules/Rules/Rules"
 import Useful from "./modules/Useful/Useful"
 import Road from "./modules/Road/Road";
+import Footer from "./modules/Footer/Footer";
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
             <div className="RoadBackground">
                 <Road/>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -20,9 +20,16 @@ const Button = (props) => {
 
         <div className='cards__cp-btn'>
 
-                <button onClick={SendMessage}>Пройти Тест!</button>
+
+            <button onClick={SendMessage}>Пройти Тест!</button>
+
+
         </div>
     );
 };
 
 export default Button;
+
+
+
+
