@@ -18,8 +18,8 @@ const Header = () => {
                     <div className="header__content-info">
                         <a href="#instructor">Обо мне</a>
                         <a href="#rules">Методическое пособие</a>
-                        <a href="#">Статьи</a>
-                        <a href="#">Тест</a>
+                        <a href="#useful">Статьи</a>
+                        <a href="#road">Тест</a>
                     </div>
                     <div className="header__content-language">
                         <a href="">

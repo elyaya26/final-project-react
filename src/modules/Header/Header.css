@@ -16,3 +16,6 @@
     align-items: center;
     justify-content: space-between;
 }
+html{
+    scroll-behavior: smooth;
+}
