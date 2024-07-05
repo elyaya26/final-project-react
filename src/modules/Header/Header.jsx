@@ -7,7 +7,7 @@ import Instructor from "../Instructor/Instructor";
 
 const Header = () => {
     return (
-        <div className="Header">
+        <div className="Header" id='Header'>
             <div className="container">
                 <div className="header__content">
                     <div className="header__content-logo">
@@ -28,7 +28,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
         </div>
+
     );
 };
 
