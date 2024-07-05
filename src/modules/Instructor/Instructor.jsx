@@ -4,7 +4,7 @@ import './Istructor.css'
 
 const Instructor = () => {
     return (
-        <div className='Instructor'>
+        <div className='Instructor' id='instructor'>
             <div className="container">
                 <div className="instructor__content">
                     <div className="instructor__content-img">
