@@ -71,3 +71,37 @@
     margin-top: 20px;
 }
 
+
+.road-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Высота страницы */
+}
+
+.Road {
+    flex: 1; /* Основное содержимое занимает оставшееся пространство */
+}
+
+/* Стили для футера */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer__title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__contact p {
+    margin: 5px 0;
+}
