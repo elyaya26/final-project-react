@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import firstCard from "../../../modules/Road/images/card-img-1.png";
 import Whatsapp from "../../../modules/Road/images/whatsapp.png";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Cards = (props) => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <div>
-            <div className="road__content-card">
-                <div className="road__card">
+            <div className="road__content-card" data-aos={props.cards.anim}>
+                <div className="road__card" >
                     <div className="road__card-img">
                         <img src={props.cards.img} alt=""/>
                     </div>
