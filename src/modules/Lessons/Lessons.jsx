@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Lessons.css'
 import whatsappLogo from './Images/whatsapp-logo.png'
 import phone from './Images/Phone.png'
@@ -20,10 +21,10 @@ const Lessons = () => {
                             Получите полную консультацию по звонку!
                         </p>
                         <div className="lessons__content-btn">
-                            <a href="">
+                            <a href="#">
                                 <button className='lessons__btn-whatsapp'>
                                     <img src={whatsappLogo} alt=""/>
-                                    <p > WhatsApp</p>
+                                    <p> WhatsApp</p>
                                 </button>
                             </a>
                             <div className="lessons__btn-number">
@@ -32,7 +33,14 @@ const Lessons = () => {
                             </div>
                         </div>
                     </div>
-                    <img src={car} alt="" className="lessons__content-car"/>
+                    <motion.img
+                        src={car}
+                        alt="Car"
+                        className="lessons__content-car"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                    />
                 </div>
                 <div className="lessons__content-graph">
                     <div className="lessons__graph-txt">
@@ -40,7 +48,7 @@ const Lessons = () => {
                             <img src={Time} alt=""/>
                             <p className='work__days'>График работы</p>
                         </div>
-                            <p>ПН-ВС; 09:00-18:00</p>
+                        <p>ПН-ВС; 09:00-18:00</p>
                     </div>
                     <div className="lessons__content-email">
                         <img src={mail} alt=""/>
@@ -53,3 +61,6 @@ const Lessons = () => {
 };
 
 export default Lessons;
+
+
+

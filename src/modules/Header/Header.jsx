@@ -10,15 +10,15 @@ const Header = () => {
             <div className="container">
                 <div className="header__content">
                     <div className="header__content-logo">
-                        <a href="#">
+                        <a href="#Header">
                             <img src={Logo} alt="logo"/>
                         </a>
                     </div>
                     <div className="header__content-info">
                         <a href="#">Обо мне</a>
                         <a href="#">Методическое пособие</a>
-                        <a href="#">Статьи</a>
-                        <a href="#">Тест</a>
+                        <a href="#useful">Статьи</a>
+                        <a href="#Road">Тест</a>
                     </div>
                     <div className="header__content-language">
                         <a href="">

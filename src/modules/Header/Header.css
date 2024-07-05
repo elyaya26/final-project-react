@@ -16,3 +16,7 @@
     align-items: center;
     justify-content: space-between;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: auto;
+}

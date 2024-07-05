@@ -25,7 +25,7 @@ const Useful = () => {
 
 
     return (
-        <div className='Useful'>
+        <div className='Useful' id='useful'>
             <h3>Полезные статьи</h3>
             <div className="useful__news">
                 {news.map((item, index) => (
