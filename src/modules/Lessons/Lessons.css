@@ -46,11 +46,11 @@
     font-family: Inter, serif;
     font-weight: 500;
     font-size: 15px;
-    line-height: 167%;
     color: #f1f1f1;
-    border: none;
+    border-bottom: none;
     text-decoration: none;
 }
+
 .lessons__btn-number{
     display: flex;
     align-items: center;
@@ -60,23 +60,35 @@
     padding: 10px;
     width: 157px;
     height: 45px;
-
 }
+
+.lessons__btn-number p{
+    text-decoration: none; /* Added to remove underline */
+}
+
 .lessons__content-btn{
     display: flex;
     margin-top: 15px;
 }
-lessons__btn-number p{
+.lessons__btn-number p{
     font-family: Inter, serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 167%;
     color: #000;
 }
-lessons__content-btn a{
+.no__decoration{
     text-decoration: none;
-
+    color: black;
 }
+#no__decoration{
+    text-decoration: none;
+    color: black;
+}
+.lessons__content-btn a{
+    text-decoration: none;
+}
+
 .lessons__content{
     display: flex;
 }
@@ -107,7 +119,7 @@ lessons__content-btn a{
     align-items: center;
 }
 .lessons__content-email a{
-    fontfamily: Inter, serif;
+    font-family: Inter, serif;
     font-weight: 400;
     font-size: 15px;
     color: #f1f1f1;

@@ -1,0 +1,161 @@
+/*!* src/components/Footer/Footer.css *!*/
+/*.footer {*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 20px;*/
+/*}*/
+/*.footer__icons{*/
+/*    width: 112px;*/
+/*    height: 24px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.footer__icons img {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*}*/
+
+/*.footer__title {*/
+/*    font-weight: bold;*/
+/*    font-size: 24px;*/
+/*}*/
+
+
+/*.footer__contact p {*/
+/*    margin: 0;*/
+/*}*/
+/*.footer {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 10px 20px;*/
+/*    background-color: #000; !* измените на нужный вам цвет *!*/
+/*    color: #fff;*/
+/*}*/
+
+/*.footer__socials a {*/
+/*    margin: 0 10px;*/
+/*}*/
+
+/*.footer__socials img {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*}*/
+
+/*.footer__brand {*/
+/*    font-size: 18px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.footer__contacts {*/
+/*    display: flex;*/
+/*}*/
+
+/*.footer__brand {*/
+/*    font-size: 18px;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*}*/
+
+/*.footer__phone {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.footer__phone img {*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    height: 100px; /* Устанавливаем высоту */
+}
+
+.footer__icons {
+    width: 112px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer__contact p {
+    margin: 0;
+}
+
+.footer__socials {
+    display: flex;
+    position: absolute;
+    left: 20px;
+}
+
+.footer__socials a {
+    margin: 0 10px;
+}
+
+.footer__socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__brand {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+}
+
+.footer__contacts {
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer__phone img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-margin-bottom: 250px;
+}

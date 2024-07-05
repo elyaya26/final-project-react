@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ruslan from './images/ruslan.png';
 import './Istructor.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Instructor = () => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
-        <div className='Instructor'>
+        <div className='Instructor' id='instructor'>
             <div className="container">
                 <div className="instructor__content">
-                    <div className="instructor__content-img">
+                    <div className="instructor__content-img" data-aos="fade-right">
                         <img src={ruslan} alt="" width='340px' height='415px'/>
                     </div>
-                    <div className="instructor__content-txt">
+                    <div className="instructor__content-txt" data-aos="fade-left">
                         <h3>Руслан Жакшылыкович</h3>
                         <h6>Инструктор по вождению более 25 лет.</h6>
                         <p>
