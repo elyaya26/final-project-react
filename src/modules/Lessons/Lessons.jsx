@@ -29,7 +29,7 @@ const Lessons = () => {
                             </a>
                             <div className="lessons__btn-number">
                                 <img src={phone} alt=""/>
-                                <a href='tel:+0552 209 809' className='no__decoration'><p>0552 209 80</p></a>
+                                <a href='tel:+0552 209 809' className='no__decoration'><p>0552 209 809</p></a>
                             </div>
                         </div>
                     </div>
