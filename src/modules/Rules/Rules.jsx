@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Rules.css';
 import book from './images/book.png';
 import location from './images/location.png';
 import axios from 'axios';
 import {showError, showSuccess} from "../../components/utils/alert";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Rules = () => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     const [number, setNumber] = useState({
         message: ''
     });
@@ -29,8 +34,8 @@ const Rules = () => {
         <div className='Rules' id='rules'>
             <div className="container">
                 <div className="rules__content">
-                    <div className="rules__content-card">
-                        <div className="rules__card-img">
+                    <div className="rules__content-card" data-aos="fade-up">
+                        <div className="rules__card-img" >
                             <img src={book} alt="" width='400px' height='525px'/>
                         </div>
                         <div className="rules__content-title">
