@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Road.css';
@@ -9,9 +9,14 @@ import Whatsapp from './images/whatsapp.png';
 import Cards from "../../components/Road-cards/Cards/Cards";
 import { showError, showSuccess } from "../../components/utils/alert";
 import Button from "../../components/Road-cards/Button/Button";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 // import Footer from "../Footer/Footer";
 
 const Road = () => {
+    useEffect(() => {
+        Aos.init()
+    }, [])
     const [cards, setCards] = useState([
         {
             title: 'Практическое вождение авто с инструктором:',
@@ -20,7 +25,8 @@ const Road = () => {
             whatsappImg: Whatsapp,
             img: firstCard,
             thirdPg: 'WhatsApp',
-            key: 1
+            key: 1,
+            anim: "fade-right"
 
         },
         {
@@ -30,7 +36,8 @@ const Road = () => {
             whatsappImg: '',
             img: secondCard,
             thirdPg: <Button/>,
-            key: 2
+            key: 2,
+            anim: "fade-left"
         }
     ]);
 
