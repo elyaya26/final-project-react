@@ -15,9 +15,14 @@ const Useful = () => {
 
     useEffect(() => {
         async function getNews(){
-            const responce = await fetch('https://codify-graduation-project.vercel.app/news')
-            const data = await responce.json();
-            setNews(data)
+            try {
+                const responce = await fetch('https://codify-graduation-project.vercel.app/news')
+                const data = await responce.json();
+                setNews(data)
+            }catch (error){
+                console.log('error function getNews')
+            }
+
         }
         getNews()
     },[])
